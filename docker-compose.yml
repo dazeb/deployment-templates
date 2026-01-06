@@ -2,7 +2,9 @@ version: '3.8'
 
 services:
   payload:
-    image: payloadcms/payload:latest
+    build:
+      context: ./payload
+      dockerfile: Dockerfile
     restart: always
     environment:
       # Database Connection
@@ -37,7 +39,7 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 40s
+      start_period: 60s
 
   db:
     image: postgres:15-alpine
