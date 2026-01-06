@@ -2,6 +2,7 @@
   "name": "payload-website-template",
   "version": "1.0.0",
   "description": "PayloadCMS Website Template with Next.js",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
